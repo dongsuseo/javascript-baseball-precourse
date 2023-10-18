@@ -20,3 +20,15 @@ userInput.addEventListener("keydown", (event) => {
     alert("3자리 숫자만 입력 가능합니다.");
   }
 });
+
+strike, (ball = compare(answer));
+
+if (strike > 0 && ball > 0) {
+  result.innerText = `${ball}볼 ${strike}스트라이크`;
+} else if (strike > 0) {
+  result.innerText = `${strike}스트라이크`;
+} else if (ball > 0) {
+  result.innerText = `${ball}볼`;
+} else {
+  result.innerText = `낫싱`;
+}
